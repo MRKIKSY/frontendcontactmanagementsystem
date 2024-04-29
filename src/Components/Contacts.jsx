@@ -39,7 +39,7 @@ const Contacts = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         axios
-          .delete(`https://contactms-api.vercel.app/contactmsyt/contact/${id}`, {
+          .delete(`https://backendcontactms.onrender.com/contactmsyt/contact/${id}`, {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
             },
