@@ -27,7 +27,7 @@ const Login = () => {
     const errs = Validation(values)
     setErrors(errs)
     if(errs.email === "" && errs.password === "") {
-      axios.post('https://backendcontactms.onrender.com/contactmsyt/login', values)
+      axios.post('https://backendcontactms.onrender.com/contactms/login', values)
       .then(res=> {
         if(res.data.success) {
           toast.success("Login Successfully", {
